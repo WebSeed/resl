@@ -2,7 +2,7 @@
   "name": "resl",
   "version": "1.0.2",
   "description": "A streaming resource loader",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "lint": "standard",
     "unit": "ava -v",
