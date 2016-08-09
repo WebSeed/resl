@@ -4,7 +4,9 @@
   "description": "A streaming resource loader",
   "main": "index.js",
   "scripts": {
-    "lint": "standard"
+    "lint": "standard",
+    "unit": "ava -v",
+    "test": "standard && ava -v"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,7 @@
   },
   "homepage": "https://github.com/mikolalysenko/resl#readme",
   "devDependencies": {
+    "ava": "^0.16.0",
     "standard": "^7.1.2"
   }
 }
