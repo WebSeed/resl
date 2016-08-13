@@ -3,10 +3,15 @@
   "version": "1.0.2",
   "description": "A streaming resource loader",
   "main": "lib/index.js",
+  "browser": {
+    "./lib/index.js": "./lib/browser.js"
+  },
   "scripts": {
     "lint": "standard",
     "unit": "ava -v",
-    "test": "standard && ava -v"
+    "test": "standard && ava -v",
+    "build": "browserify lib/index.js -s resl -o dist/resl.js",
+    "watch": "watchify lib/index.js -s resl -o dist/resl.js"
   },
   "repository": {
     "type": "git",
