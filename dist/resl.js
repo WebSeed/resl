@@ -430,7 +430,9 @@ module.exports = function resl (config) {
 }
 
 },{"./xhr":2}],2:[function(require,module,exports){
-module.exports = require('xmlhttprequest').XMLHttpRequest
+module.exports = typeof window !== 'undefined'
+  ? window.XMLHttpRequest
+  : require('xmlhttprequest').XMLHttpRequest
 
 },{"xmlhttprequest":37}],3:[function(require,module,exports){
 'use strict'
