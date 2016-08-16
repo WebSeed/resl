@@ -4,7 +4,6 @@
   "description": "A streaming resource loader",
   "main": "lib/index.js",
   "browser": {
-    "./lib/index.js": "./lib/browser.js"
   },
   "scripts": {
     "lint": "standard",
